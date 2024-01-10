@@ -15,7 +15,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
   imports: [
     CommonModule,
     RouterOutlet,
-  
+ 
     HeaderComponent,
     FooterComponent,
     ProductdetailsComponent,

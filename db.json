@@ -1,0 +1,67 @@
+{
+    "products": [
+    {
+        "id": 1,
+        "Name": "Glasses",
+        "detail": "Top Quality Sun glasses polarized",
+        "Price": 100,
+        "color": "Red",
+        "discount": 10,
+        "imgPath": "../../assets/images/product-1.avif"
+      },
+      {
+        "id": 2,
+        "Name": "Wooden Chair",
+        "detail":"High chair pin wood",
+        "Price": 100,
+        "color": "Red",
+        "discount": 10,
+        "imgPath": "../../assets/images/product-2.avif"
+      },
+      {
+        "id": 3,
+        "Name": "Nike Shoes",
+        "detail":"Sport trainer",
+        "Price": 100,
+        "color": "Red",
+        "discount": 10,
+        "imgPath": "../../assets/images/product-3.avif"
+      },
+      {
+        "id": 4,
+        "Name": "Saniteizers",
+        "detail": "99,9 percent antibacterial",
+        "Price": 100,
+        "color": "Red",
+        "discount": 10,
+        "imgPath": "../../assets/images/product-4.avif"
+      },
+      {
+        "id": 5,
+        "Name": "Toy",
+        "detail": "Car miniatures",
+        "Price": 100,
+        "color": "Red",
+        "discount": 10,
+        "imgPath": "../../assets/images/product-5.avif"
+      },
+      {
+        "id": 6,
+        "Name": "Apple smartwatch",
+        "detail": "RAM 128 GB.",
+        "Price": 100,
+        "color": "Red",
+        "discount": 10,
+        "imgPath": "../../assets/images/product-6.avif"
+      },
+      {
+        "id": 7,
+        "Name": "Headphones",
+        "detail": "Dolbey sound system",
+        "Price": 100,
+        "color": "Red",
+        "discount": 10,
+        "imgPath": "../../assets/images/product-7.avif"
+      }
+    ]
+}
