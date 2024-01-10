@@ -35,7 +35,8 @@
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
-              "src/assets/js/jquery.easing.1.3.min.js",
+              "node_modules/jquery.easing/jquery.easing.min.js",
+             
               "src/assets/js/jquery.sticky.js",
              "src/assets/js/bxslider.min.js",
               "src/assets/js/script.slider.js",
