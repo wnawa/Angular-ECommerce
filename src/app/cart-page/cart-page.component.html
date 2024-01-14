@@ -129,17 +129,18 @@
 
                     <td class="product-quantity">
                       <div class="quantity buttons_added">
-                        <input type="button" class="minus" value="-" />
+                        <input type="button" class="minus" value="-" (click)="cartItem.quantity=cartItem.quantity-1"/>
                         <input
                           type="number"
                           size="4"
                           class="input-text qty text"
                           title="Qty"
-                          value="1"
+                          value={{cartItem.quantity}}
+                         
                           min="0"
                           step="1"
                         />
-                        <input type="button" class="plus" value="+" />
+                        <input type="button" class="plus" value="+"     (click)="cartItem.quantity=cartItem.quantity+1"/>
                       </div>
                     </td>
 

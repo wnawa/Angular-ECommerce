@@ -22,4 +22,17 @@ export class CartService {
   getCart(): Cart {
     return this.cart;
   }
+
+  //update cart Quantity
+  addQuantitiy(cartItemId: number): Cart {
+    console.log(cartItemId);
+    this.cart.items.find((cartItem) => {
+      if (cartItem.id == cartItemId) cartItem.quantity++;
+    });
+    return this.cart;
+  }
+
+  //delete cart item
+
+ 
 }
