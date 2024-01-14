@@ -21,7 +21,7 @@
             <img src="{{ product.photo }}" alt="" />
           </div>
           <h2>
-            <a href="">{{ product.title }}</a>
+            <a routerLink="/product/{{product.id}}">{{ product.title }}</a>
           </h2>
           <div class="product-carousel-price">
             <ins>${{ product.discount }}</ins> <del>${{ product.Price }}</del>

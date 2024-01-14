@@ -41,14 +41,5 @@ export class CartService {
     return this.cart;
   }
 
-//   var removeIndex = array.map(item => item.id).indexOf("abc");
 
-// ~removeIndex && array.splice(removeIndex, 1);
-  // removeItem<T>(arr: Array<T>, value: T): Array<T> {
-  //   const index = arr.indexOf(value);
-  //   if (index > -1) {
-  //     arr.splice(index, 1);
-  //   }
-  //   return arr;
-  // }
 }

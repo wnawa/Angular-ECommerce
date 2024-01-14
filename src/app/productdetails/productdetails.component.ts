@@ -1,17 +1,36 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { ProductServices } from '../services/products/products.services';
+import { Product } from '../shared/models/Product';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-productdetails',
   standalone: true,
-  imports: [],
+  imports: [CommonModule,FormsModule],
   templateUrl: './productdetails.component.html',
   styleUrl: './productdetails.component.css'
 })
 export class ProductdetailsComponent {
-  constructor(private activatedRout: ActivatedRoute) {
-    this.activatedRout.queryParams.subscribe((params) => {
-      let productId = params['id'];
+  productId: number | undefined;
+  product: Product | undefined;
+  constructor(
+    private activatedRout: ActivatedRoute,
+    private productService: ProductServices
+    ) {
+    this.activatedRout.params.subscribe((params) => {
+      this.productId = Number(params['id']);
+
+      this.productService
+      .getProductById(this.productId)
+      .then((returnedproduct  ) => {
+        this.product = returnedproduct;
+      });
     });
   }
+
+
+
+
 }
