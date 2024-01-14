@@ -11,9 +11,11 @@ export class CartService {
   constructor() {}
   //Add new Product to cart
   addToCart(product: Product) {
-   const existCartItem= this.cart.items.find(cartitem => cartitem.product.id == product.id) ;
-   (existCartItem)
-      ? existCartItem.quantity++   
+    const existCartItem = this.cart.items.find(
+      (cartitem) => cartitem.product.id == product.id
+    );
+    existCartItem
+      ? existCartItem.quantity++
       : this.cart.items.push(new CartItem(product));
     console.log(this.cart);
   }
@@ -33,6 +35,20 @@ export class CartService {
   }
 
   //delete cart item
+  deleteCartItemById(cartItemId: number): Cart {
+    var removeIndex =  this.cart.items.map(cartItem=> cartItem.id ).indexOf(cartItemId);
+    ~removeIndex && this.cart.items.splice(removeIndex, 1);
+    return this.cart;
+  }
 
- 
+//   var removeIndex = array.map(item => item.id).indexOf("abc");
+
+// ~removeIndex && array.splice(removeIndex, 1);
+  // removeItem<T>(arr: Array<T>, value: T): Array<T> {
+  //   const index = arr.indexOf(value);
+  //   if (index > -1) {
+  //     arr.splice(index, 1);
+  //   }
+  //   return arr;
+  // }
 }

@@ -103,7 +103,7 @@
                   @for(cartItem of cart.items ; track cartItem.id){
                   <tr class="cart_item">
                     <td class="product-remove">
-                      <a title="Remove this item" class="remove" routerLink=""
+                      <a title="Remove this item" class="remove"  (click)="deleteCartItemById(cartItem.id)"
                         >×</a
                       >
                     </td>
@@ -140,7 +140,7 @@
                           min="0"
                           step="1"
                         />
-                        <input type="button" class="plus" value="+"     (click)="cartItem.quantity<4?cartItem.quantity=cartItem.quantity+1:4"/>
+                        <input type="button" class="plus" value="+" (click)="cartItem.quantity<4?cartItem.quantity=cartItem.quantity+1:4"/>
                       </div>
                     </td>
 

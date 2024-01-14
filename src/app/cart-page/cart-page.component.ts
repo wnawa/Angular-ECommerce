@@ -24,7 +24,11 @@ export class CartPageComponent {
     this.cart = this.cartservice.getCart();
   }
   addQuantitiy(cartItemId: number) {
-    this.cart = this.cartservice.addQuantitiy(cartItemId)
+    this.cart = this.cartservice.addQuantitiy(cartItemId);
+
+  }
+  deleteCartItemById(cartItemId: number){
+    this.cart = this.cartservice.deleteCartItemById(cartItemId);
 
   }
   // addQuantitiy(cartItemId: number) {
