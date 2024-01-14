@@ -145,7 +145,7 @@
                     </td>
 
                     <td class="product-subtotal">
-                      <span class="amount">£{{cart.totalPrice}}</span>
+                      <span class="amount">£{{cartItem.price}}</span>
                     </td>
                   </tr>
                   }
@@ -253,7 +253,7 @@
                   <tbody>
                     <tr class="cart-subtotal">
                       <th>Cart Subtotal</th>
-                      <td><span class="amount">£15.00</span></td>
+                      <td><span class="amount">£{{cart.totalPrice}}</span></td>
                     </tr>
 
                     <tr class="shipping">
