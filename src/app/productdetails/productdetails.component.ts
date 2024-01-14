@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { ProductServices } from '../services/products/products.services';
 import { Product } from '../shared/models/Product';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { CartService } from '../services/cart/cart.service';
 
 @Component({
   selector: 'app-productdetails',
   standalone: true,
-  imports: [CommonModule,FormsModule],
+  imports: [CommonModule,FormsModule,RouterLink],
   templateUrl: './productdetails.component.html',
   styleUrl: './productdetails.component.css'
 })
@@ -17,7 +18,7 @@ export class ProductdetailsComponent {
   product: Product | undefined;
   constructor(
     private activatedRout: ActivatedRoute,
-    private productService: ProductServices
+    private productService: ProductServices, private cartservice: CartService
     ) {
     this.activatedRout.params.subscribe((params) => {
       this.productId = Number(params['id']);
@@ -30,7 +31,9 @@ export class ProductdetailsComponent {
     });
   }
 
-
+  addCartItem(product: any) {
+    this.cartservice.addToCart(product);
+  }
 
 
 }
