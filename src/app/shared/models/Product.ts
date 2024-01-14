@@ -1,7 +1,7 @@
 export class Product {
     id!:number;
     title!: string;
-    price!: number;
+    Price!: number;
     color?: string;
     discount?: number;
     photo!: string;
