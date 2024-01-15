@@ -19,7 +19,18 @@ export class CartService {
       : this.cart.items.push(new CartItem(product));
     console.log(this.cart);
   }
-
+  //Add new Product to cart with quantity
+  addToCartWithQuantity(product: Product,quantity:number) {
+   
+    const existCartItem = this.cart.items.find(
+      (cartitem) => cartitem.product.id == product.id
+    );
+    existCartItem
+      ? existCartItem.quantity++
+      : this.cart.items.push(new CartItem(product)); 
+      //(quantity)?this.cart.
+    console.log(this.cart);
+  }
   //Function display Cart Items
   getCart(): Cart {
     return this.cart;
