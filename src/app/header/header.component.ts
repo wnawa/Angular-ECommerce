@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { CartService } from '../services/cart/cart.service';
+import { Cart } from '../shared/models/Cart';
 // import * as $ from 'jquery';
 @Component({
   selector: 'app-header',
@@ -9,5 +11,12 @@ import { RouterLink } from '@angular/router';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  cart!: Cart;
+  constructor(private cartservice: CartService) {
+    this.setCart();
+  }
 
+  setCart() {
+    this.cart = this.cartservice.getCart();
+  }
 }

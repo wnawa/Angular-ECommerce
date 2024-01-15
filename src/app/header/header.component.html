@@ -78,9 +78,9 @@
       <div class="col-sm-6">
         <div class="shopping-item">
           <a routerLink="/cart"
-            >Cart - <span class="cart-amunt">$100</span>
+            >Cart - <span class="cart-amunt">${{cart.totalPrice}}</span>
             <i class="fa fa-shopping-cart"></i>
-            <span class="product-count">5</span></a
+            <span class="product-count">{{cart.items.length}}</span></a
           >
         </div>
       </div>
