@@ -110,14 +110,14 @@ body {
 .logo h1 a span {
   color: #5a88ca;
 }
-.shopping-item {
+/* .shopping-item {
   border: 1px solid #ddd;
   float: right;
   font-size: 18px;
   margin-top: 40px;
   padding: 10px;
   position: relative;
-}
+} */
 .shopping-item a {
   color: #666;
 }
@@ -134,7 +134,7 @@ body {
   height: 20px;
   padding-top: 2px;
   position: absolute;
-  right: -10px;
+  right: 0px;
   text-align: center;
   top: -10px;
   width: 20px;
@@ -828,7 +828,7 @@ ol.slide-indicators li.active {
   padding-right: 2px;
   margin-right: 5px;
 }
-
+.footer-card-icon  i,.checkout-button{padding: 2px;}
 .copyright > p {
   margin: 10px 0 0;
 }
@@ -970,7 +970,7 @@ button[type="submit"]:hover {
 .quantity input[type="number"] {
   border: 1px solid #5a88ca;
   padding: 5px;
-  width: 50px;
+  width: 40px;
 }
 .add_to_cart_button {
   background: none repeat scroll 0 0 #5a88ca;
@@ -1069,13 +1069,13 @@ table.shop_table {
   margin-bottom: 50px;
   width: 100%;
 }
-table.shop_table th,
+/* table.shop_table th,
 table.shop_table td {
   border-left: 1px solid #ddd;
   border-top: 1px solid #ddd;
   padding: 15px;
-  text-align: center;
-}
+  /* text-align: center; 
+} */
 table.shop_table th {
   background: none repeat scroll 0 0 #f4f4f4;
   font-size: 15px;
@@ -1112,11 +1112,11 @@ td.actions div.coupon {
   margin-right: 3%;
   width: 57%;
 }
-.cart_totals {
+/* .cart_totals {
   float: right;
   margin-bottom: 50px;
-  width: 40%;
-}
+   width: 40%; 
+} */
 .cart-collaterals h2 {
   color: #5a88ca;
   font-size: 25px;
@@ -1272,10 +1272,10 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button {
   background-color: #222;
 }
 
-.cart-collaterals .shipping_calculator {
+/* .cart-collaterals .shipping_calculator {
   float: right;
   width: 40%;
-}
+} */
 
 #login-form-wrap,
 #coupon-collapse-wrap {

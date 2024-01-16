@@ -103,7 +103,10 @@
                   @for(cartItem of cart.items ; track cartItem.id){
                   <tr class="cart_item">
                     <td class="product-remove">
-                      <a title="Remove this item" class="remove"  (click)="deleteCartItemById(cartItem.id)"
+                      <a
+                        title="Remove this item"
+                        class="remove"
+                        (click)="deleteCartItemById(cartItem.id)"
                         >×</a
                       >
                     </td>
@@ -115,37 +118,56 @@
                           height="145"
                           alt="poster_1_up"
                           class="shop_thumbnail"
-                          src={{cartItem.product.photo}}
+                          src="{{ cartItem.product.photo }}"
                       /></a>
                     </td>
 
                     <td class="product-name">
-                      <a routerLink="/product">{{cartItem.product.title}}</a>
+                      <a routerLink="/product/{{ cartItem.product.id }}">{{
+                        cartItem.product.title
+                      }}</a>
                     </td>
 
                     <td class="product-price">
-                      <span class="amount">£{{cartItem.product.Price}}</span>
+                      <span class="amount">£{{ cartItem.product.Price }}</span>
                     </td>
 
                     <td class="product-quantity">
                       <div class="quantity buttons_added">
-                        <input type="button" class="minus" value="-" (click)="cartItem.quantity>1?cartItem.quantity=cartItem.quantity-1:1"/>
+                        <input
+                          type="button"
+                          class="minus"
+                          value="-"
+                          (click)="
+                            cartItem.quantity > 1
+                              ? (cartItem.quantity = cartItem.quantity - 1)
+                              : 1
+                          "
+                        />
                         <input
                           type="number"
                           size="4"
                           class="input-text qty text"
                           title="Qty"
-                          value={{cartItem.quantity}}
-                         
+                          value="{{ cartItem.quantity }}"
                           min="0"
                           step="1"
                         />
-                        <input type="button" class="plus" value="+" (click)="cartItem.quantity<4?cartItem.quantity=cartItem.quantity+1:4"/>
+                        <input
+                          type="button"
+                          class="plus"
+                          value="+"
+                          (click)="
+                            cartItem.quantity < 4
+                              ? (cartItem.quantity = cartItem.quantity + 1)
+                              : 4
+                          "
+                        />
                       </div>
                     </td>
 
                     <td class="product-subtotal">
-                      <span class="amount">£{{cartItem.price}}</span>
+                      <span class="amount">£{{ cartItem.price }}</span>
                     </td>
                   </tr>
                   }
@@ -169,19 +191,23 @@
                           class="button"
                         />
                       </div>
-                      <input
-                        type="submit"
-                        value="Update Cart"
-                        name="update_cart"
-                        class="button p-2"
-                      />
-                      <input
-                        routerLink="/checkout"
-                        type="submit"
-                        value="Checkout"
-                        name="proceed"
-                        class="checkout-button button alt wc-forward p-2"
-                      />
+                      <div class="break"></div>
+                      <!-- break -->
+                      <div class="submitcart">
+                        <input
+                          type="submit"
+                          value="Update Cart"
+                          name="update_cart"
+                          class="button update_cart-button"
+                        />
+                        <input
+                          routerLink="/checkout"
+                          type="submit"
+                          value="Checkout"
+                          name="proceed"
+                          class="button checkout-button alt wc-forward"
+                        />
+                      </div>
                     </td>
                   </tr>
                 </tbody>
@@ -253,7 +279,9 @@
                   <tbody>
                     <tr class="cart-subtotal">
                       <th>Cart Subtotal</th>
-                      <td><span class="amount">£{{cart.totalPrice}}</span></td>
+                      <td>
+                        <span class="amount">£{{ cart.totalPrice }}</span>
+                      </td>
                     </tr>
 
                     <tr class="shipping">
@@ -264,7 +292,11 @@
                     <tr class="order-total">
                       <th>Order Total</th>
                       <td>
-                        <strong><span class="amount">£{{cart.totalPrice}}</span></strong>
+                        <strong
+                          ><span class="amount"
+                            >£{{ cart.totalPrice }}</span
+                          ></strong
+                        >
                       </td>
                     </tr>
                   </tbody>
