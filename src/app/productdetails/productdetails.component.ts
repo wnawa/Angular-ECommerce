@@ -16,6 +16,7 @@ import { CartService } from '../services/cart/cart.service';
 export class ProductdetailsComponent {
   productId: number | undefined;
   product: Product | undefined;
+  quantity:number=1;
   constructor(
     private activatedRout: ActivatedRoute,
     private productService: ProductServices, private cartservice: CartService
@@ -32,7 +33,7 @@ export class ProductdetailsComponent {
   }
 
   addCartItem(product: any) {
-    this.cartservice.addToCart(product);
+    this.cartservice.addToCartWithQuantity(product,this.quantity);
   }
 
 

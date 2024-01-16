@@ -19,18 +19,25 @@ export class CartService {
       : this.cart.items.push(new CartItem(product));
     console.log(this.cart);
   }
-  //Add new Product to cart with quantity
+  //Add new Product to cart with quantity for single product page
   addToCartWithQuantity(product: Product,quantity:number) {
-   
     const existCartItem = this.cart.items.find(
       (cartitem) => cartitem.product.id == product.id
     );
     existCartItem
-      ? existCartItem.quantity++
-      : this.cart.items.push(new CartItem(product)); 
-      //(quantity)?this.cart.
+      ? existCartItem.quantity=quantity
+      : this.cart.items.push(this.createCartItemQuantity(product,quantity));
+      //quantity?this.cart.
     console.log(this.cart);
   }
+
+  // Creat cart item for single product page
+  createCartItemQuantity(product: Product,quantity:number) {
+    let cartItem= new CartItem(product);
+    cartItem.quantity=quantity;
+    return cartItem;
+  }
+
   //Function display Cart Items
   getCart(): Cart {
     return this.cart;
@@ -47,10 +54,10 @@ export class CartService {
 
   //delete cart item
   deleteCartItemById(cartItemId: number): Cart {
-    var removeIndex =  this.cart.items.map(cartItem=> cartItem.id ).indexOf(cartItemId);
+    var removeIndex = this.cart.items
+      .map((cartItem) => cartItem.id)
+      .indexOf(cartItemId);
     ~removeIndex && this.cart.items.splice(removeIndex, 1);
     return this.cart;
   }
-
-
 }
