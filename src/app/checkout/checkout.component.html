@@ -786,18 +786,19 @@
                                             </tr>
                                         </thead>
                                         <tbody>
+                                            @for(cartItem of cart.items;track cartItem.id){
                                             <tr class="cart_item">
                                                 <td class="product-name">
-                                                    Ship Your Idea <strong class="product-quantity">× 1</strong> </td>
+                                                    {{cartItem.product.title}} <strong class="product-quantity">× {{cartItem.quantity}}</strong> </td>
                                                 <td class="product-total">
-                                                    <span class="amount">£15.00</span> </td>
-                                            </tr>
+                                                    <span class="amount">£{{cartItem.price}}</span> </td>
+                                            </tr>}
                                         </tbody>
                                         <tfoot>
 
                                             <tr class="cart-subtotal">
                                                 <th>Cart Subtotal</th>
-                                                <td><span class="amount">£15.00</span>
+                                                <td><span class="amount">£{{cart.totalPrice}}</span>
                                                 </td>
                                             </tr>
 
@@ -813,7 +814,7 @@
 
                                             <tr class="order-total">
                                                 <th>Order Total</th>
-                                                <td><strong><span class="amount">£15.00</span></strong> </td>
+                                                <td><strong><span class="amount">£{{cart.totalPrice}}</span></strong> </td>
                                             </tr>
 
                                         </tfoot>
