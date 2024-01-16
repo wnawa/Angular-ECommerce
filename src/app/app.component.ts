@@ -9,13 +9,14 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { CartPageComponent } from './cart-page/cart-page.component';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { LatestProductsComponent } from './latest-products/latest-products.component';
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
     CommonModule,
     RouterOutlet,
- 
+    LatestProductsComponent,
     HeaderComponent,
     FooterComponent,
     ProductdetailsComponent,

@@ -1,0 +1,26 @@
+<owl-carousel-o [options]="customOptions">
+    @for(product of pruductArr ;track product.id){
+    <ng-template carouselSlide>
+    
+      <div class="single-product">
+        <div class="product-f-image">
+          <img src={{product.photo}} alt="" />
+          <div class="product-hover">
+            <a routerLink="" class="add-to-cart-link"
+              ><i class="fa fa-shopping-cart"></i> Add to cart</a
+            >
+            <a routerLink="/product" class="view-details-link"
+              ><i class="fa fa-link"></i> See details</a
+            >
+          </div>
+        </div>
+
+        <h2><a routerLink="/product">{{product.title}}</a></h2>
+
+        <div class="product-carousel-price">
+          <ins>${{product.discount}}</ins> <del>${{product.Price}}</del>
+        </div>
+      </div>
+    </ng-template>
+}
+  </owl-carousel-o>

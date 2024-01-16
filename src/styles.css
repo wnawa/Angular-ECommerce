@@ -563,7 +563,7 @@ body {
 .single-product:hover .product-hover:after {
   left: 0;
 }
-
+/* here the owl error */
 .product-carousel {
   padding-top: 40px;
 }

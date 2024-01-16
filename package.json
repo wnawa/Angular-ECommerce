@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "json":"json-server --watch db.json"
+    "json": "json-server --watch db.json"
   },
   "private": true,
   "dependencies": {
@@ -40,6 +40,7 @@
     "@angular/compiler-cli": "^17.0.0",
     "@types/jasmine": "~5.1.0",
     "@types/jquery": "^3.5.29",
+    "@types/owlcarousel": "^1.3.8",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
