@@ -5,11 +5,12 @@ import { Product } from '../shared/models/Product';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { CartService } from '../services/cart/cart.service';
+import { LatestProductsComponent } from '../latest-products/latest-products.component';
 
 @Component({
   selector: 'app-productdetails',
   standalone: true,
-  imports: [CommonModule, FormsModule, RouterLink],
+  imports: [CommonModule, FormsModule, RouterLink,LatestProductsComponent],
   templateUrl: './productdetails.component.html',
   styleUrl: './productdetails.component.css',
 })
