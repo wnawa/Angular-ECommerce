@@ -1,7 +1,7 @@
 <ngx-slick-carousel
   class="carousel"
   #slickModal="slick-carousel"
-  [config]="slideConfigLogos"
+  [config]="count"
 >
   @for(product of pruductArr ;track product.id){
   <div ngxSlickItem class="slide">

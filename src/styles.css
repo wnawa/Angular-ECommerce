@@ -177,14 +177,21 @@ body {
 .mainmenu-area .nav > li > a:focus {
   color: #fff;
 }
-.latest-product .slick-slide img {
-  height: 60vh;
-  /* max-heig1ht: 80vh; */
-  /* max-width: 30vh; */
+.latest-product .slick-slide img,.single-product .slick-slide img {
+  height: 50vh;
+  /* max-height: 500px;
+  max-width: 345px; */
   margin: 0 auto;
   object-fit: cover;
   border: none !important;
   /* padding: 5px; */
+}
+.slick-slide {
+  padding: 5px;
+  margin: 20px;
+  width: 80%;
+  height:80%;
+  /* filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1)); */
 }
 .latest-product .logoslick-next {
   /* background: #fa8072; */
@@ -198,11 +205,7 @@ body {
   /* position: absolute; */
 }
 
-.slick-slide {
-  padding: 5px;
-  /* margin: 20px; */
-  /* filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1)); */
-}
+
 .slider-area {
   width: 80%;
   position: relative;

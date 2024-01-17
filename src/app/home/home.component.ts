@@ -30,32 +30,7 @@ declare var $:any;
   ]
 })
 export class HomeComponent {
-  // @ViewChild('slickModal', { static: true }) slickModal: SlickCarouselComponent;
-  // customOptions: OwlOptions = {
-  //   loop: true,
-  //   mouseDrag: false,
-  //   touchDrag: false,
-  //   pullDrag: false,
-  //   dots: false,
-    
-  //   navSpeed: 700,
-  //   navText: ['prev', 'next'],
-  //   responsive: {
-  //     0: {
-  //       items: 1
-  //     },
-  //     400: {
-  //       items: 2
-  //     },
-  //     740: {
-  //       items: 3
-  //     },
-  //     940: {
-  //       items: 4
-  //     }
-  //   },
-  //   nav: true
-  // }
+  
   slides = [
     {
       img: '../../assets/img/h4-slide.png',
@@ -131,32 +106,5 @@ export class HomeComponent {
     {img :"../../assets/img/brand2.png" }
   ];
 
-    // latestproducts=[{
-
-    //   { img:"",titel:"",price :"" },
-    // }]
-  // next() {
-  //   // this.slickModal.slickNext();
-  // }
-  
-  // prev() {
-  //   // this.slickModal.slickPrev();
-  // }
-  // ngOnInit() {
-  //   $('.owl-example').owlCarousel();
-  // }
-  // ngAfterContentInit() {
-  //   $('.owl-example').owlCarousel();
-  // } 
-  // ngAfterViewInit(): void {
-  //    $('.owl-example').owlCarousel();
-  // }
-  // $owlElement: any;
-  // constructor(private el: ElementRef) {}
-  // defaultOptions: any = {};
-  // ngAfterViewInit() {
-   
-  //   this.$owlElement = $(this.el.nativeElement).owlCarousel(this.defaultOptions);
-  // }
 
 }

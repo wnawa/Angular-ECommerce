@@ -15,6 +15,7 @@ import { LatestProductsComponent } from '../latest-products/latest-products.comp
   styleUrl: './productdetails.component.css',
 })
 export class ProductdetailsComponent {
+  initial_value=3;
   productId: number =1;
   product: Product | undefined;
   quantity: number = 1;
@@ -40,4 +41,37 @@ export class ProductdetailsComponent {
   addCartItem(product: any) {
     this.cartservice.addToCartWithQuantity(product, this.quantity);
   }
+  slideConfigLogos = {
+    accessibility: true,
+    dots: false,
+    slidesToShow: 3,
+    autoplay: false,
+    autoplaySpeed: 1500,
+    isFinite: true,
+    arrows: true,  
+      responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1008,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],nextArrow: '<button type="button" class=" logoslick-next ">next</button>',
+    prevArrow: '<button type="button" class="  logoslick-prev  ">prev</button>'
+  };
 }
