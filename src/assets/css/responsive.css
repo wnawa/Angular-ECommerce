@@ -96,6 +96,13 @@
     margin: 20px 0;
     text-align: center;
   }
+  .logoslick-prev{
+
+    /* top: 0px;
+    right:10px; */
+    /* margin-left: 1000px!important ; */
+  
+  }
   .shopping-item {
     font-size: 22px;
 
@@ -213,7 +220,13 @@
    padding: 1px; 
     text-align: left;
   }  */
-
+  .logoslick-prev{
+/* 
+    top: 0px;
+    right:0px;
+    margin-left: 20px!important ; */
+  
+  }
   table.shop_table th,
   table.shop_table td {
     border-left: 1px solid #ddd;

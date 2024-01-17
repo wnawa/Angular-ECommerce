@@ -4,10 +4,11 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 import { CartService } from '../services/cart/cart.service';
 import { ProductServices } from '../services/products/products.services';
 import { Product } from '../shared/models/Product';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 @Component({
   selector: 'app-latest-products',
   standalone: true,
-  imports:  [CarouselModule],
+  imports:  [CarouselModule,SlickCarouselModule],
   templateUrl: './latest-products.component.html',
   styleUrl: './latest-products.component.css'
 })
@@ -18,7 +19,8 @@ export class LatestProductsComponent {
     touchDrag: false,
     pullDrag: false,
     dots: false,
-    
+    autoWidth:true,
+    autoHeight:true,
     navSpeed: 700,
     navText: ['prev', 'next'],
     responsive: {
@@ -50,4 +52,37 @@ export class LatestProductsComponent {
     });
    
   }
+  slideConfigLogos = {
+    accessibility: true,
+    dots: false,
+    slidesToShow: 5,
+    autoplay: false,
+    autoplaySpeed: 1500,
+    isFinite: true,
+    arrows: true,  
+      responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1008,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],nextArrow: '<button type="button" class=" logoslick-next ">next</button>',
+    prevArrow: '<button type="button" class="  logoslick-prev  ">prev</button>'
+  };
 }

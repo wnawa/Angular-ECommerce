@@ -20,6 +20,7 @@
     "@angular/platform-browser-dynamic": "^17.0.0",
     "@angular/router": "^17.0.0",
     "angular-font-awesome": "^3.1.2",
+    "animate.css": "^4.1.1",
     "bootstrap": "^3.3.5",
     "bxslider": "^4.2.14",
     "font-awesome": "^4.7.0",

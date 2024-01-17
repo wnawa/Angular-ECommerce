@@ -6,6 +6,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 // import './hero-details-box.css';
 import 'rxjs';
 import { LatestProductsComponent } from '../latest-products/latest-products.component';
+import { ViewEncapsulation } from '@angular/compiler';
 declare var $:any;
 // import * as $ from 'jquery';
 // import  "../../assets/css/owl.carousel.css";
@@ -24,34 +25,37 @@ declare var $:any;
   imports: [RouterLink, CarouselModule, SlickCarouselModule,LatestProductsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
+  animations: [
+    // animation triggers go here
+  ]
 })
 export class HomeComponent {
   // @ViewChild('slickModal', { static: true }) slickModal: SlickCarouselComponent;
-  customOptions: OwlOptions = {
-    loop: true,
-    mouseDrag: false,
-    touchDrag: false,
-    pullDrag: false,
-    dots: false,
+  // customOptions: OwlOptions = {
+  //   loop: true,
+  //   mouseDrag: false,
+  //   touchDrag: false,
+  //   pullDrag: false,
+  //   dots: false,
     
-    navSpeed: 700,
-    navText: ['prev', 'next'],
-    responsive: {
-      0: {
-        items: 1
-      },
-      400: {
-        items: 2
-      },
-      740: {
-        items: 3
-      },
-      940: {
-        items: 4
-      }
-    },
-    nav: true
-  }
+  //   navSpeed: 700,
+  //   navText: ['prev', 'next'],
+  //   responsive: {
+  //     0: {
+  //       items: 1
+  //     },
+  //     400: {
+  //       items: 2
+  //     },
+  //     740: {
+  //       items: 3
+  //     },
+  //     940: {
+  //       items: 4
+  //     }
+  //   },
+  //   nav: true
+  // }
   slides = [
     {
       img: '../../assets/img/h4-slide.png',
@@ -82,7 +86,40 @@ export class HomeComponent {
     autoplaySpeed: 1500,
     isFinite: true,
     arrows: true,
+  
   };
+  slideConfigLogos = {
+    accessibility: true,
+    dots: false,
+    slidesToShow: 4,
+    autoplay: false,
+    autoplaySpeed: 1500,
+    isFinite: true,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1008,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],nextArrow: '<button type="button" class=" logoslick-next ">next</button>',
+    prevArrow: '<button type="button" class="  logoslick-prev  ">prev</button>'}
   slidesLogos= [
     {img :"../../assets/img/brand1.png" },
     {img :"../../assets/img/brand2.png" },

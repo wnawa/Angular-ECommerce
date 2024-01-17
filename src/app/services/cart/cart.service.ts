@@ -25,7 +25,7 @@ export class CartService {
       (cartitem) => cartitem.product.id == product.id
     );
     existCartItem
-      ? existCartItem.quantity=quantity
+      ? existCartItem.quantity+=quantity
       : this.cart.items.push(this.createCartItemQuantity(product,quantity));
       //quantity?this.cart.
     console.log(this.cart);
