@@ -14,8 +14,8 @@
               <div class="carousel-item">
                 <img [src]="slide.img" alt="Slide" />
                 <div class="caption-group1">
-                  <h2 class="caption title">
-                    {{ slide.title }}
+                  <h2 class="caption title" > {{ slide.title }}
+                   <!-- <div [innerHTML]="slide.title  | safeHtml"></div> -->
                   </h2>
                   <h4 class="caption subtitle">{{ slide.subtitle }}</h4>
                   <a class="caption button-radius" routerLink=""
@@ -73,8 +73,9 @@
           <div class="col-md-12">
             <div class="latest-product">
               <h2 class="section-title">Latest Products</h2>
-              <app-latest-products [count]="slideConfigLogos"></app-latest-products>
-       
+              <app-latest-products
+                [count]="slideConfiglatestProducts"
+              ></app-latest-products>
             </div>
           </div>
         </div>
@@ -95,33 +96,12 @@
                 >@for (slide of slidesLogos; track slide.img) {
                 <div class="product-f-image">
                   <div ngxSlickItem class="slide">
-                    <img
-                      [src]="slide.img"
-                      alt="Slide"
-                      class="img-fluid"
-                    />
+                    <img [src]="slide.img" alt="Slide" class="img-fluid" />
                   </div>
                 </div>
                 }
               </ngx-slick-carousel>
-              <div class="brand-list">
-                <!-- <ngx-slick-carousel class="carousel" #slickModal="slick-carousel"  [config]="slideConfig">
-              @for (slide of slidesLogos; track slide.img) {
-               
-                    <img src="{{ slide.img }}" alt="Slide" /> -->
-
-                <!-- <img src="../../assets/img/brand1.png" alt="" />
-              <img src="../../assets/img/brand2.png" alt="" />
-              <img src="../../assets/img/brand3.png" alt="" />
-              <img src="../../assets/img/brand4.png" alt="" />
-              <img src="../../assets/img/brand5.png" alt="" />
-              <img src="../../assets/img/brand6.png" alt="" />
-              <img src="../../assets/img/brand1.png" alt="" />
-              <img src="../../assets/img/brand2.png" alt=""
-            /> -->
-
-                <!-- }</ngx-slick-carousel> -->
-              </div>
+              <div class="brand-list"></div>
             </div>
           </div>
         </div>

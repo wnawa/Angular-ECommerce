@@ -1,51 +1,51 @@
-/* .owl-carousel.owl-loaded {
-	display: block;
-  }
-  .owl-carousel.owl-loading {
-	opacity: 0;
-	display: block;
+/* .slick-slide {
+	padding: 5px;
+	margin: 20px;
+	width: 80%;
+	height: 80%;
+	
   } */
+  /* .slideshow,
+.slick-slider,
+.single-product {
+  display:block;
+} */
+/* .slick-nav,
+.arrows-container {
+  display:block;
+} */
+/* slick-list {
+    margin: 0 -10px;
+    } */
+/* .latest-product .logoslick-next {
+  background: #fa8072; */
+  /* left: 82px; */
+  /* position: absolute; */
+  /* background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjx0aXRsZT5jaGV2cm9uLXJpZ2h0PC90aXRsZT48cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMTUuNzA2IDExLjI5NGwtNi02Yy0wLjM4Ny0wLjM4Ny0xLjAyNS0wLjM4Ny0xLjQxMyAwcy0wLjM4NyAxLjAyNSAwIDEuNDEzbDUuMjk0IDUuMjk0LTUuMjk0IDUuMjk0Yy0wLjM4NyAwLjM4Ny0wLjM4NyAxLjAyNSAwIDEuNDEzIDAuMTk0IDAuMTk0IDAuNDUgMC4yOTQgMC43MDYgMC4yOTRzMC41MTMtMC4xIDAuNzA2LTAuMjk0bDYtNmMwLjM5NC0wLjM4NyAwLjM5NC0xLjAyNSAwLTEuNDEzeiI+PC9wYXRoPjwvc3ZnPg==);
+} */
 
-/* .slick-dots{size: 10px;} */
+/* .latest-product .logoslick-prev {
+  left: 10px; */
+  /* position: absolute;
+} */
+/* .latest-product .slick-slide img,
+.single-product .slick-slide img {
+  height: 50vh;
+  width: 100%;
+  margin: 0 auto;
+  object-fit: cover;
+  border: none !important;
 
-/* .custom-slick .slick-prev:before {
-    content: "";
-    font-family: 'FontAwesome';
-    font-size: 22px;
-}
-.custom-slick .slick-next:before {
-    content: "";
-    font-family: 'FontAwesome';
-    font-size: 22px;
 } */
 /* .slick-prev:before,
 .slick-next:before {
-    color: rgb(82, 82, 176)!important;
+    background-color: rgb(82, 82, 176)!important;
   } */
-/*
-.slick-prev:before
-,.slick-next:before,.slick-arrow-icon-left,
-.slick-arrow-icon-right {
-	width: 32px;
-	height: 32px;
-	border: 1px solid #eaeaea;
-	text-align: center;
-	display: block;
-	border-radius: 50%;
-	font-size: 30px;
-	position: absolute;
-	top: 50%;
-	-ms-transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
-	line-height: 29px;
-	-moz-transition: all 0.45s ease;
-	-webkit-transition: all 0.45s ease;
-	-o-transition: all 0.45s ease;
-	-ms-transition: all 0.45s ease;
-	transition: all 0.45s ease;
-    content:">";
-    display: inline-block;
-    width: 50px; 
-    height: 50px;
+  /* .shopping-item {
+  border: 1px solid #ddd;
+  float: right;
+  font-size: 18px;
+  margin-top: 40px;
+  padding: 10px;
+  position: relative;
 } */
