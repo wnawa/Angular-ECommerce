@@ -152,7 +152,10 @@
                           value="{{ cartItem.quantity }}"
                           min="1"
                           step="1"
+                        #qnty
+                        (change)="updateQuantitiy(cartItem.id,qnty.value)"
                         
+                         
                         
                         />
                         <input

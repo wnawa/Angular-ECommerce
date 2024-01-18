@@ -14,7 +14,7 @@ import { CommonModule } from '@angular/common';
 })
 export class CartPageComponent {
   cart!: Cart;
-
+  // quantity: number = 1;
   constructor(private cartservice: CartService) {
     this.setCart();
   }
@@ -22,10 +22,10 @@ export class CartPageComponent {
   setCart() {
     this.cart = this.cartservice.getCart();
   }
-  // updateQuantitiy(cartItemId: number,qty) {
-  //   this.cart = this.cartservice.updateQuantitiy(cartItemId,qty);
+  updateQuantitiy(cartItemId: number,quantity:string) {
+    this.cart = this.cartservice.updateQuantitiy(cartItemId,Number(quantity));
 
-  // }
+  }
   deleteCartItemById(cartItemId: number){
     this.cart = this.cartservice.deleteCartItemById(cartItemId);
 
