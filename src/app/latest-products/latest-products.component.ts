@@ -1,4 +1,5 @@
 import { Component,Input ,OnInit } from '@angular/core';
+import { Output, EventEmitter } from '@angular/core';
 import { CartService } from '../services/cart/cart.service';
 import { ProductServices } from '../services/products/products.services';
 import { Product } from '../shared/models/Product';
@@ -13,11 +14,20 @@ import { RouterLink } from '@angular/router';
   styleUrl: './latest-products.component.css'
 })
 export class LatestProductsComponent {
-  @Input()count :any;
-  OnInit(){}
-  //start services Model Lecture 14
+  // productId?:number;
+  //Getting value on Courasoul setting from parent components
+  @Input({required:true})count :any;
+  //Writing back to product details page
+  @Output() ShowDetailsClicked = new EventEmitter<number>();
+
+  showDetails(productId:number) {
+    this.ShowDetailsClicked.emit(productId);
+    console.log("details")
+  }
+ 
+  
   pruductArr: Product[]=[];
-  /////////Injection
+ 
   constructor(
     private productServices: ProductServices,
     private cartservice: CartService

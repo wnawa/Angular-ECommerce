@@ -12,14 +12,14 @@
           <a routerLink="/cart" class="add-to-cart-link" (click)=" addCartItem(product)"
             ><i class="fa fa-shopping-cart"></i> Add to cart</a
           >
-          <a routerLink="/product/{{product.id}}" class="view-details-link"
+          <a routerLink="/product/{{product.id}}" class="view-details-link" (click)="showDetails(product.id)"
             ><i class="fa fa-link"></i> See details</a
           >
         </div>
       </div>
 
       <h2>
-        <a routerLink="/product/{{product.id}}">{{ product.title }}</a>
+        <a routerLink="/product/{{product.id}}" (click)="showDetails(product.id)">{{ product.title }}</a>
       </h2>
 
       <div class="product-carousel-price">
