@@ -32,7 +32,7 @@ export class HomeComponent {
     },
     {
       img: '../../assets/img/h4-slide2.png',
-      title:`by one, get one <span class="primary">50% <strong>off</strong></span>` ,//'buy one, get one 50% off',
+      title:'buy one, get one 50% off',
       subtitle: 'school supplies & backpacks.*',
     },
     {
