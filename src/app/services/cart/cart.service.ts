@@ -9,50 +9,39 @@ import CartItem from '../../shared/models/CartItem';
 export class CartService {
   private cart: Cart = new Cart();
   constructor() {}
-  //Add new Product to cart
-  addToCart(product: Product) {
-    const existCartItem = this.cart.items.find(
-      (cartitem) => cartitem.product.id == product.id
-    );
-    existCartItem
-      ? existCartItem.quantity++
-      : this.cart.items.push(new CartItem(product));
-    console.log(this.cart);
-  }
-  //Add new Product to cart with quantity for single product page
-  addToCartWithQuantity(product: Product,quantity:number) {
-    const existCartItem = this.cart.items.find(
-      (cartitem) => cartitem.product.id == product.id
-    );
-    existCartItem
-      ? existCartItem.quantity+=quantity
-      : this.cart.items.push(this.createCartItemQuantity(product,quantity));
-      //quantity?this.cart.
-    console.log(this.cart);
-  }
-
-  // Creat cart item for single product page
-  createCartItemQuantity(product: Product,quantity:number) {
-    let cartItem= new CartItem(product);
-    cartItem.quantity=quantity;
-    return cartItem;
-  }
-
-  //Function display Cart Items
+  //Function READ Cart Items
   getCart(): Cart {
     return this.cart;
   }
 
-  //update cart Quantity
-  addQuantitiy(cartItemId: number): Cart {
-    console.log(cartItemId);
+  //Add to cart CREATE new Product  or update quantity 
+  addToCart(product: Product, quantity: number
+    =1) {
+    const existCartItem = this.cart.items.find(
+      (cartitem) => cartitem.product.id == product.id
+    );
+    existCartItem
+      ? (existCartItem.quantity += quantity)
+      : this.cart.items.push(this.createCartItem(product, quantity));
+  
+  }
+
+  // Create cart item for single product page
+  createCartItem(product: Product, quantity: number) {
+    let cartItem = new CartItem(product);
+    cartItem.quantity = quantity;
+    return cartItem;
+  }
+
+  //UPDATE cart Quantity
+  updateQuantitiy(cartItemId: number,Qty:number): Cart {
     this.cart.items.find((cartItem) => {
-      if (cartItem.id == cartItemId) cartItem.quantity++;
+      if (cartItem.id == cartItemId) cartItem.quantity=Qty;
     });
     return this.cart;
   }
 
-  //delete cart item
+  //DELETE cart item
   deleteCartItemById(cartItemId: number): Cart {
     var removeIndex = this.cart.items
       .map((cartItem) => cartItem.id)

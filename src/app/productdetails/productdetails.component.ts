@@ -39,7 +39,7 @@ export class ProductdetailsComponent {
   }
 
   addCartItem(product: any) {
-    this.cartservice.addToCartWithQuantity(product, this.quantity);
+    this.cartservice.addToCart(product, this.quantity);
   }
   slideConfigLogos = {
     accessibility: true,
