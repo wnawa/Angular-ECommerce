@@ -98,8 +98,8 @@
               <div class="product-inner">
                 <h2 class="product-name">{{ product?.title }}</h2>
                 <div class="product-inner-price">
-                  <ins>${{ product?.discount }}</ins>
-                  <del>${{ product?.Price }}</del>
+                  <ins>{{ product?.discount |currency }}</ins>
+                  <del>{{ product?.Price|currency  }}</del>
                 </div>
 
                 <form action="" class="cart">

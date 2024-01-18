@@ -3,10 +3,12 @@ import { CartService } from '../services/cart/cart.service';
 import { ProductServices } from '../services/products/products.services';
 import { Product } from '../shared/models/Product';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-latest-products',
   standalone: true,
-  imports:  [SlickCarouselModule],
+  imports:  [SlickCarouselModule,CommonModule,RouterLink],
   templateUrl: './latest-products.component.html',
   styleUrl: './latest-products.component.css'
 })
@@ -26,37 +28,7 @@ export class LatestProductsComponent {
    
     // this.count="";
   }
-  // slideConfigLogos = {
-  //   accessibility: true,
-  //   dots: false,
-  //   slidesToShow: this.count,
-  //   autoplay: false,
-  //   autoplaySpeed: 1500,
-  //   isFinite: true,
-  //   arrows: true,  
-  //     responsive: [
-  //     {
-  //       breakpoint: 1200,
-  //       settings: {
-  //         slidesToShow: 4,
-  //         slidesToScroll: 1,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 1008,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         slidesToScroll: 1,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 800,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1,
-  //       },
-  //     },
-  //   ],nextArrow: '<button type="button" class=" logoslick-next ">next</button>',
-  //   prevArrow: '<button type="button" class="  logoslick-prev  ">prev</button>'
-  // };
+  addCartItem(product: Product) {
+    this.cartservice.addToCart(product);
+  }
 }

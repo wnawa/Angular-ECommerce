@@ -24,7 +24,7 @@
             <a routerLink="/product/{{product.id}}">{{ product.title }}</a>
           </h2>
           <div class="product-carousel-price">
-            <ins>${{ product.discount }}</ins> <del>${{ product.Price }}</del>
+            <ins>{{ product.discount |currency }}</ins> <del>{{ product.Price |currency }}</del>
           </div>
 
           <div class="product-option-shop">

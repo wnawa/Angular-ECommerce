@@ -791,14 +791,14 @@
                                                 <td class="product-name">
                                                     {{cartItem.product.title}} <strong class="product-quantity">× {{cartItem.quantity}}</strong> </td>
                                                 <td class="product-total">
-                                                    <span class="amount">£{{cartItem.price}}</span> </td>
+                                                    <span class="amount">{{cartItem.price |currency}}</span> </td>
                                             </tr>}
                                         </tbody>
                                         <tfoot>
 
                                             <tr class="cart-subtotal">
                                                 <th>Cart Subtotal</th>
-                                                <td><span class="amount">£{{cart.totalPrice}}</span>
+                                                <td><span class="amount">{{cart.totalPrice |currency}}</span>
                                                 </td>
                                             </tr>
 
@@ -814,7 +814,7 @@
 
                                             <tr class="order-total">
                                                 <th>Order Total</th>
-                                                <td><strong><span class="amount">£{{cart.totalPrice}}</span></strong> </td>
+                                                <td><strong><span class="amount">{{cart.totalPrice |currency}}</span></strong> </td>
                                             </tr>
 
                                         </tfoot>

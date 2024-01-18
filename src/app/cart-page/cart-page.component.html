@@ -129,7 +129,7 @@
                     </td>
 
                     <td class="product-price">
-                      <span class="amount">£{{ cartItem.product.Price }}</span>
+                      <span class="amount">{{ cartItem.product.Price |currency }}</span>
                     </td>
 
                     <td class="product-quantity">
@@ -172,7 +172,7 @@
                     </td>
 
                     <td class="product-subtotal">
-                      <span class="amount">£{{ cartItem.price }}</span>
+                      <span class="amount">{{ cartItem.price|currency }}</span>
                     </td>
                   </tr>
                   }
@@ -285,7 +285,7 @@
                     <tr class="cart-subtotal">
                       <th>Cart Subtotal</th>
                       <td>
-                        <span class="amount">£{{ cart.totalPrice }}</span>
+                        <span class="amount">{{ cart.totalPrice|currency }}</span>
                       </td>
                     </tr>
 
@@ -299,7 +299,7 @@
                       <td>
                         <strong
                           ><span class="amount"
-                            >£{{ cart.totalPrice }}</span
+                            >{{ cart.totalPrice |currency}}</span
                           ></strong
                         >
                       </td>
