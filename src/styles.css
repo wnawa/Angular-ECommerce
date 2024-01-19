@@ -498,7 +498,7 @@ body {
 }
 
 .product-wid-title {
-  font-family: raleway;
+  font-family: "Raleway", sans-serif;;
   font-size: 30px;
   font-weight: 100;
   margin-bottom: 40px;
@@ -575,7 +575,7 @@ body {
   color: #5a88ca;
 }
 .footer-wid-title {
-  font-family: raleway;
+  font-family: "Raleway", sans-serif;;
   font-size: 30px;
   font-weight: 100;
   color: #fff;
@@ -722,7 +722,7 @@ ol.slide-indicators li.active {
 }
 
 .product-bit-title h2 {
-  font-family: raleway;
+  font-family: "Raleway", sans-serif;;
   font-size: 50px;
   font-weight: 200;
   margin: 0;

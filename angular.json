@@ -29,7 +29,10 @@
               "node_modules/slick-carousel/slick/slick-theme.scss",
               "node_modules/font-awesome/css/font-awesome.css",
               "src/assets/css/responsive.css",
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/@fontsource/roboto-condensed/index.css",
+              "node_modules/@fontsource/titillium-web/index.css",
+              "node_modules/@fontsource/raleway/100.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
