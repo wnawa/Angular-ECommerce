@@ -5,12 +5,16 @@ I have used Slick Corasoul for this Project and customized it's css.
 Jquery is also used for some designs animations in the menu.
 A Fake jason server is used to fetch data from db file.
 The Website is fully Mobile Responsive.
-
 The Website enables the user to perform all e- commerce operations:
-####-Home Page Showing Top sellers .reviews as well as Latetes Products.
-####-Shop Page Showing All Products with option to Show Details or Add Product to cart .
-####-Showing Detailed View of a Product Page with the postion to view related Products .
-####-Checkout Details Page.
+<ol>
+  <li>Home Page Showing Top sellers .reviews as well as Latetes Products.</li>
+  <li>Home Page Showing Top sellers .reviews as well as Latetes Products.</li>
+    <li>Shop Page Showing All Products with option to Show Details or Add Product to cart .</li>
+     <li>Showing Detailed View of a Product Page with the postion to view related Products .</li>
+    <li>Checkout Details Page.</li>
+          
+</ol>
+
 
 At the moment the User's Profile Page is under construction.
 
