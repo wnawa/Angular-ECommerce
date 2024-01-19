@@ -13,11 +13,8 @@ import { CartService } from '../services/cart/cart.service';
   styleUrl: './products.component.css',
 })
 export class ProductsComponent {
- 
+  pruductArr: Product[] = [];
 
-  //start services Model Lecture 14
-  pruductArr: Product[]=[];
-  /////////Injection
   constructor(
     private productServices: ProductServices,
     private cartservice: CartService
@@ -25,7 +22,6 @@ export class ProductsComponent {
     this.productServices.getAllProducts().then((productList: Product[]) => {
       this.pruductArr = productList;
     });
-   
   }
   addCartItem(product: Product) {
     this.cartservice.addToCart(product);

@@ -14,7 +14,7 @@ import { CommonModule } from '@angular/common';
 })
 export class CartPageComponent {
   cart!: Cart;
-  // quantity: number = 1;
+  
   constructor(private cartservice: CartService) {
     this.setCart();
   }

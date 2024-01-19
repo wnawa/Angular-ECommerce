@@ -1,4 +1,4 @@
-import { Component,Input ,OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Output, EventEmitter } from '@angular/core';
 import { CartService } from '../services/cart/cart.service';
 import { ProductServices } from '../services/products/products.services';
@@ -9,25 +9,22 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-latest-products',
   standalone: true,
-  imports:  [SlickCarouselModule,CommonModule,RouterLink],
+  imports: [SlickCarouselModule, CommonModule, RouterLink],
   templateUrl: './latest-products.component.html',
-  styleUrl: './latest-products.component.css'
+  styleUrl: './latest-products.component.css',
 })
 export class LatestProductsComponent {
-  // productId?:number;
   //Getting value on Courasoul setting from parent components
-  @Input({required:true})count :any;
+  @Input({ required: true }) count: any;
   //Writing back to product details page
   @Output() ShowDetailsClicked = new EventEmitter<number>();
 
-  showDetails(productId:number) {
+  showDetails(productId: number) {
     this.ShowDetailsClicked.emit(productId);
-    console.log("details")
+    console.log('details');
   }
- 
-  
-  pruductArr: Product[]=[];
- 
+  pruductArr: Product[] = [];
+
   constructor(
     private productServices: ProductServices,
     private cartservice: CartService
@@ -35,8 +32,6 @@ export class LatestProductsComponent {
     this.productServices.getAllProducts().then((productList: Product[]) => {
       this.pruductArr = productList;
     });
-   
-    // this.count="";
   }
   addCartItem(product: Product) {
     this.cartservice.addToCart(product);

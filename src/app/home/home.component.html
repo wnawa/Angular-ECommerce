@@ -14,8 +14,9 @@
               <div class="carousel-item">
                 <img [src]="slide.img" alt="Slide" />
                 <div class="caption-group1">
-                  <h2 class="caption title" > {{ slide.title }}
-                   <!-- <div [innerHTML]="slide.title  | safeHtml"></div> -->
+                  <h2 class="caption title">
+                    {{ slide.title }}
+                    <span class="primary"> {{ slide.greentext }}</span>
                   </h2>
                   <h4 class="caption subtitle">{{ slide.subtitle }}</h4>
                   <a class="caption button-radius" routerLink=""

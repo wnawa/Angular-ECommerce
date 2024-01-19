@@ -6,3 +6,11 @@
     border: none !important;
    
   }
+
+  
+.slick-slide {
+  padding: 5px;
+  margin: 20px;
+  width: 80%;
+  height: 80%;
+}

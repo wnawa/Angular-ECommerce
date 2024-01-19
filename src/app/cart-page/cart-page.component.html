@@ -129,7 +129,9 @@
                     </td>
 
                     <td class="product-price">
-                      <span class="amount">{{ cartItem.product.Price |currency }}</span>
+                      <span class="amount">{{
+                        cartItem.product.Price | currency
+                      }}</span>
                     </td>
 
                     <td class="product-quantity">
@@ -152,11 +154,8 @@
                           value="{{ cartItem.quantity }}"
                           min="1"
                           step="1"
-                        #qnty
-                        (change)="updateQuantitiy(cartItem.id,qnty.value)"
-                        
-                         
-                        
+                          #qnty
+                          (change)="updateQuantitiy(cartItem.id, qnty.value)"
                         />
                         <input
                           type="button"
@@ -172,7 +171,9 @@
                     </td>
 
                     <td class="product-subtotal">
-                      <span class="amount">{{ cartItem.price|currency }}</span>
+                      <span class="amount">{{
+                        cartItem.price | currency
+                      }}</span>
                     </td>
                   </tr>
                   }
@@ -285,7 +286,9 @@
                     <tr class="cart-subtotal">
                       <th>Cart Subtotal</th>
                       <td>
-                        <span class="amount">{{ cart.totalPrice|currency }}</span>
+                        <span class="amount">{{
+                          cart.totalPrice | currency
+                        }}</span>
                       </td>
                     </tr>
 
@@ -298,9 +301,9 @@
                       <th>Order Total</th>
                       <td>
                         <strong
-                          ><span class="amount"
-                            >{{ cart.totalPrice |currency}}</span
-                          ></strong
+                          ><span class="amount">{{
+                            cart.totalPrice | currency
+                          }}</span></strong
                         >
                       </td>
                     </tr>

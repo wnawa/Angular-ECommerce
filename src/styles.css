@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import "ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
-@import "ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
+/* Header CSS */
 a {
   text-decoration: none;
 }
@@ -119,20 +118,7 @@ body {
   color: #5a88ca;
   font-weight: 700;
 }
-.product-count {
-  background: none repeat scroll 0 0 #5a88ca;
-  border-radius: 50%;
-  color: #fff;
-  display: inline-block;
-  font-size: 10px;
-  height: 20px;
-  padding-top: 2px;
-  position: absolute;
-  right: 0px;
-  text-align: center;
-  top: -10px;
-  width: 20px;
-}
+
 .shopping-item i.fa {
   margin-left: 15px;
 }
@@ -152,7 +138,6 @@ body {
   background: none repeat scroll 0 0 #000;
 }
 
-
 .mainmenu-area ul.navbar-nav li a {
   color: #6e6a6a;
   font-size: 14px;
@@ -168,181 +153,75 @@ body {
   color: #fff;
 }
 
-.slick-slide {
-  padding: 5px;
-  margin: 20px;
-  width: 80%;
-  height: 80%;
-  
-}
-
-
+/* Main Slick Courasol*/
 .slider-area {
-  width: 80%;
-  position: relative;
+  width: 85%;
   margin: 0 auto;
-  padding: 5px;
 }
-/*-------------------------
-[9. Block slider]
----------------------------*/
-.block-slider {
-  border: none;
-  width: 100%;
+.slick-slide {
+  display: flex;
+  text-align: center;
 }
-.block-slider ul li {
-  list-style: none;
+.slick-dots {
+  position: absolute;
+  z-index: 9;
+  transform: scale(2, 2);
 }
-.block-slider .bx-pager {
-  display: none;
+
+.mainslick-next:hover,
+.mainslick-prev:hover {
+  background: #5a88ca;
+  color: #fff;
+  border-color: #5a88ca;
 }
-.block-slider .bx-prev,
-.block-slider .bx-next {
+
+.mainslick-next,
+.mainslick-prev {
+  z-index: 1000;
+  position: absolute;
   width: 32px;
   height: 32px;
   border: 1px solid #eaeaea;
   text-align: center;
   display: block;
   border-radius: 50%;
-  font-size: 30px;
+  font-size: 14px;
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  line-height: 29px;
+  line-height: 32px;
   -moz-transition: all 0.45s ease;
   -webkit-transition: all 0.45s ease;
   -o-transition: all 0.45s ease;
   -ms-transition: all 0.45s ease;
   transition: all 0.45s ease;
 }
-.block-slider img {
-  width: 100%;
-  height: auto;
+.mainslick-next {
+  right: 0;
 }
-.block-slider .bx-prev {
-  left: 0px;
-  padding-right: 3px;
+.mainslick-prev {
+  left: -5px;
 }
-.block-slider .bx-next {
-  right: 0px;
-  padding-left: 3px;
-}
-.block-slider:hover .bx-prev {
-  left: 10px;
-}
-.block-slider:hover .bx-next {
-  right: 10px;
-}
-.block-slider .bx-prev:hover,
-.slick-prev:before,
-.slick-next:before,
-.block-slider .bx-next:hover {
-  /* background: #5a88ca; */
-  /* color: #fff; */
-  transform: scale(1.5, 1.5);
-  border-radius: 50%;
-  right: 0px;
-  border: 0.1px solid white;
-  /* border-color: #5a88ca; */
-}
-/* slick corasol slide show css in home component  */
-.slick-arrow:before {
-  z-index: 9;
-  display: block;
-  background-color: #5a88ca;
-}
-
-.slick-prev {
-  left: 50px;
-  z-index: 1;
-}
-.slick-next {
-  right: 50px;
-}
-.slick-dots {
-  z-index: 9;
-  transform: scale(3, 3);
-}
-/* .slick-list {
-  width:calc(100% + 40px);
-} */
-.slick-slide {
-  display: flex;
-}
-.slick-slide .caption-group1 {
+/* logos nd products corasoul */
+.logoslick-prev,
+.logoslick-next {
+  background: #fa8072;
   position: absolute;
-  margin-left: 600px;
-  /* float: right; */
-  /* right:40px; */
-  top: 90px;
+  color: #fff;
+  border: 1px solid #fff;
+  margin: 0px 0px 0px 3px;
 }
-
-.caption-group1 {
-  
-  opacity: 0;
-  transition-delay: 0s;
-  transition-duration: 0.2s;
-  transition-property: opacity;
-  transition-timing-function: ease-out;
+.logoslick-prev {
+  right: 60px;
+  z-index: 1000;
+  font-size: 14px;
 }
-
-.slick-slide.slick-active .caption-group1 {
-  opacity: 1;
-  transition-delay: 0.3s;
-  transition-duration: 0.2s;
-  transition-property: opacity;
-  transition-timing-function: ease-in;
+.logoslick-next {
+  right: 0;
+  top: 0;
 }
-/* & .slick-list { margin: 0 -7px; & .slick-slide > div { padding: 0 10px; } } */
-/*------------------
-[4. Slidershow]
-------------------*/
-
-.block-slider .bx-pager {
-  display: block;
-  text-align: center;
-}
-.block-slider .bx-pager-item {
-  width: 15px;
-  height: 15px;
-  background: #fff;
-  font-size: 0;
-  display: inline-block;
-  border-radius: 50%;
-  margin: 0 3px;
-}
-.block-slider .bx-pager-item a {
-  width: 100%;
-  height: 100%;
-  background: #999;
-  display: block;
-  border-radius: 50%;
-}
-.block-slider .bx-pager-item a.active {
-  background: #1bd172;
-}
-.block-slider .caption-group {
-  position: absolute;
-  top: 26%;
-  right: 16%;
-}
-.block-slider .caption-group .title {
-  margin: 0;
-}
-.block-slider .caption-group .subtitle {
-  margin: 0;
-  margin-top: 5px;
-}
-.block-slider .caption-group .button-radius {
-  margin-top: 27px;
-}
-.block-slider .caption-group .primary {
-  color: #1bd172;
-}
-
-
 /*----------------------
 [10. Block top seller ]
 ------------------------*/
@@ -433,28 +312,9 @@ body {
   padding: 20px 0 20px;
 }
 
-
 .promo-area .zigzag-bottom,
 .brands-area .zigzag-bottom {
   background: #f4f4f4;
-}
-.logoslick-prev {
-  background: #fa8072;
-  position: absolute;
-  right: 60px;
-  z-index: 1000;
-  font-size: 14px;
-  margin: 0px 0px 0px 3px;
-  color: #fff;
-  border: 1px solid #fff;
-}
-.logoslick-next {
-  position: absolute;
-  right: 0;
-  top: 0;
-  background: #fa8072;
-  color: #fff;
-  border: 1px solid #fff;
 }
 .single-promo {
   font-size: 25px;
@@ -518,7 +378,7 @@ body {
   border-radius: 5px;
   color: #fff;
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   left: 10%;
   margin: 0;
   padding: 10px;
@@ -1290,11 +1150,6 @@ div.cart-collaterals ul.products li.product a:hover {
 div.cart-collaterals ul.products li.product:hover .add_to_cart_button {
   background-color: #222;
 }
-
-/* .cart-collaterals .shipping_calculator {
-  float: right;
-  width: 40%;
-} */
 
 #login-form-wrap,
 #coupon-collapse-wrap {

@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { CartService } from '../services/cart/cart.service';
 import { LatestProductsComponent } from '../latest-products/latest-products.component';
-import { Output, EventEmitter } from '@angular/core';
+
 @Component({
   selector: 'app-productdetails',
   standalone: true,
@@ -29,8 +29,8 @@ export class ProductdetailsComponent {
       this.productId = Number(params['id']);
     });
     this.getProduct(this.productId);
-   }
-   
+  }
+
   //calling service to display product
   getProduct(productselected: number) {
     this.productService
@@ -39,7 +39,7 @@ export class ProductdetailsComponent {
         this.product = returnedproduct;
       });
   }
- //calling service to display product when show details button clicked in related products corasoul
+  //calling service to display product when show details button clicked in related products corasoul
   onShowDetailsClicked(productselected: number) {
     this.getProduct(productselected);
   }

@@ -14,16 +14,14 @@ export class CartService {
     return this.cart;
   }
 
-  //Add to cart CREATE new Product  or update quantity 
-  addToCart(product: Product, quantity: number
-    =1) {
+  //Add to cart CREATE new Product  or update quantity
+  addToCart(product: Product, quantity: number = 1) {
     const existCartItem = this.cart.items.find(
       (cartitem) => cartitem.product.id == product.id
     );
     existCartItem
       ? (existCartItem.quantity += quantity)
       : this.cart.items.push(this.createCartItem(product, quantity));
-  
   }
 
   // Create cart item for single product page
@@ -34,9 +32,9 @@ export class CartService {
   }
 
   //UPDATE cart Quantity
-  updateQuantitiy(cartItemId: number,Qty:number): Cart {
+  updateQuantitiy(cartItemId: number, Qty: number): Cart {
     this.cart.items.find((cartItem) => {
-      if (cartItem.id == cartItemId) cartItem.quantity=Qty;
+      if (cartItem.id == cartItemId) cartItem.quantity = Qty;
     });
     return this.cart;
   }

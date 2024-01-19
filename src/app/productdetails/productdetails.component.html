@@ -98,8 +98,8 @@
               <div class="product-inner">
                 <h2 class="product-name">{{ product?.title }}</h2>
                 <div class="product-inner-price">
-                  <ins>{{ product?.discount |currency }}</ins>
-                  <del>{{ product?.Price|currency  }}</del>
+                  <ins>{{ product?.discount | currency }}</ins>
+                  <del>{{ product?.Price | currency }}</del>
                 </div>
 
                 <form action="" class="cart">
@@ -205,7 +205,10 @@
           <div class="related-products-wrapper">
             <h2 class="related-products-title">Related Products</h2>
             <div class="related-products-carousel">
-              <app-latest-products (ShowDetailsClicked)="onShowDetailsClicked($event)" [count]="slideConfigRelatedProducts" ></app-latest-products>
+              <app-latest-products
+                (ShowDetailsClicked)="onShowDetailsClicked($event)"
+                [count]="slideConfigRelatedProducts"
+              ></app-latest-products>
             </div>
           </div>
         </div>

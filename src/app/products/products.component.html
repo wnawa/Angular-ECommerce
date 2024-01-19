@@ -21,10 +21,11 @@
             <img src="{{ product.photo }}" alt="" />
           </div>
           <h2>
-            <a routerLink="/product/{{product.id}}">{{ product.title }}</a>
+            <a routerLink="/product/{{ product.id }}">{{ product.title }}</a>
           </h2>
           <div class="product-carousel-price">
-            <ins>{{ product.discount |currency }}</ins> <del>{{ product.Price |currency }}</del>
+            <ins>{{ product.discount | currency }}</ins>
+            <del>{{ product.Price | currency }}</del>
           </div>
 
           <div class="product-option-shop">
@@ -34,7 +35,8 @@
               data-product_sku=""
               data-product_id="70"
               rel="nofollow"
-              routerLink="/cart" (click)=" addCartItem(product)"
+              routerLink="/cart"
+              (click)="addCartItem(product)"
               >Add to cart</a
             >
           </div>

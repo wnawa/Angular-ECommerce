@@ -8,11 +8,9 @@ export class ProductServices {
   async getAllProducts(): Promise<Product[]> {
     const data = await fetch(this.productsURL);
     return (await data.json()) ?? []; //return array if null data
-   
   }
   async getProductById(Id: number): Promise<Product | undefined> {
     const data = await fetch(`${this.productsURL}/${Id}`);
     return (await data.json()) ?? []; //return array if null data
   }
-
 }

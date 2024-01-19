@@ -1,51 +1,101 @@
-/* .slick-slide {
-	padding: 5px;
-	margin: 20px;
-	width: 80%;
-	height: 80%;
-	
-  } */
-  /* .slideshow,
-.slick-slider,
-.single-product {
-  display:block;
-} */
-/* .slick-nav,
-.arrows-container {
-  display:block;
-} */
-/* slick-list {
-    margin: 0 -10px;
-    } */
-/* .latest-product .logoslick-next {
-  background: #fa8072; */
-  /* left: 82px; */
-  /* position: absolute; */
-  /* background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjx0aXRsZT5jaGV2cm9uLXJpZ2h0PC90aXRsZT48cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMTUuNzA2IDExLjI5NGwtNi02Yy0wLjM4Ny0wLjM4Ny0xLjAyNS0wLjM4Ny0xLjQxMyAwcy0wLjM4NyAxLjAyNSAwIDEuNDEzbDUuMjk0IDUuMjk0LTUuMjk0IDUuMjk0Yy0wLjM4NyAwLjM4Ny0wLjM4NyAxLjAyNSAwIDEuNDEzIDAuMTk0IDAuMTk0IDAuNDUgMC4yOTQgMC43MDYgMC4yOTRzMC41MTMtMC4xIDAuNzA2LTAuMjk0bDYtNmMwLjM5NC0wLjM4NyAwLjM5NC0xLjAyNSAwLTEuNDEzeiI+PC9wYXRoPjwvc3ZnPg==);
-} */
+/* Main courasol */
 
-/* .latest-product .logoslick-prev {
-  left: 10px; */
-  /* position: absolute;
-} */
-/* .latest-product .slick-slide img,
-.single-product .slick-slide img {
-  height: 50vh;
+.title {
+  margin: 0;
+} 
+.subtitle {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 14px;
+}
+.button-radius {
+  margin-top: 27px;
+}
+ .primary {
+  color: #1bd172;
+}
+
+
+
+
+/*-------------------------
+[9. Block slider]
+---------------------------*/
+.block-slider {
+  border: none;
   width: 100%;
-  margin: 0 auto;
-  object-fit: cover;
-  border: none !important;
+}
+.block-slider .slick-dots ul li,
+.block-slider ul li {
+  list-style: none;
+}
+.block-slider .slick-dots ul li,
+.block-slider .bx-pager {
+  display: none;
+}
 
-} */
-/* .slick-prev:before,
-.slick-next:before {
-    background-color: rgb(82, 82, 176)!important;
-  } */
-  /* .shopping-item {
-  border: 1px solid #ddd;
-  float: right;
-  font-size: 18px;
-  margin-top: 40px;
-  padding: 10px;
-  position: relative;
-} */
+
+.block-slider img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+.caption-group1 {
+  text-align: left;
+  opacity: 0;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+  transition-timing-function: ease-out;
+}
+
+.slick-slide.slick-active .caption-group1 {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0.3s;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+  transition-timing-function: ease-in;
+}
+
+/* & .slick-list { margin: 0 -7px; & .slick-slide > div { padding: 0 10px; } } */
+/*------------------
+[4. Slidershow]
+------------------*/
+
+.block-slider .bx-pager {
+  display: block;
+  text-align: center;
+}
+.block-slider .bx-pager-item {
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  font-size: 0;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 3px;
+}
+.block-slider .bx-pager-item a {
+  width: 100%;
+  height: 100%;
+  background: #999;
+  display: block;
+  border-radius: 50%;
+}
+.block-slider .bx-pager-item a.active {
+  background: #1bd172;
+ }
+ .block-slider 
+.caption-group {
+  position: absolute;
+  top: 26%;
+  right: 16%;
+}
+
+
+/* slick corasol slide show css in home component  */
+
+

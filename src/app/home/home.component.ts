@@ -1,14 +1,9 @@
 import { Component } from '@angular/core';
-
 import { RouterLink } from '@angular/router';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { LatestProductsComponent } from '../latest-products/latest-products.component';
-
-import { DomSanitizer } from '@angular/platform-browser'
 import { CommonModule } from '@angular/common';
-// import { PipeTransform, Pipe } from "@angular/core";
 
-// @Pipe({ name: 'safeHtml'})
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -27,22 +22,26 @@ export class HomeComponent {
   slides = [
     {
       img: '../../assets/img/h4-slide.png',
-      title: 'iphone 6 Plus',
+      title: 'iphone ',
+      greentext:'6 Plus',
       subtitle: 'Dual SIM',
     },
     {
       img: '../../assets/img/h4-slide2.png',
-      title:'buy one, get one 50% off',
+      title:'buy one, get one ',
+      greentext:'50% off',
       subtitle: 'school supplies & backpacks.*',
     },
     {
       img: '../../assets/img/h4-slide3.png',
-      title: 'Apple Store Ipod',
+      title: 'Apple ',
+      greentext:'Store Ipod',
       subtitle: 'Select Item',
     },
     {
       img: '../../assets/img/h4-slide4.png',
-      title: 'Apple Store Ipod',
+      title: 'Apple ',
+      greentext:'Store Ipod',
       subtitle: '&Phone',
     },
   ];
@@ -54,6 +53,8 @@ export class HomeComponent {
     autoplaySpeed: 1500,
     isFinite: true,
     arrows: true,
+      nextArrow: '<i class="fa fa-chevron-right mainslick-next" style="color: #5a88ca;"></i>',
+  prevArrow: '<i class="fa fa-chevron-left mainslick-prev" style="color: #5a88ca;"></i>'
   };
 
    // Brands corasoul configuration
@@ -138,7 +139,7 @@ export class HomeComponent {
     prevArrow: '<button type="button" class="  logoslick-prev  ">prev</button>',
   };
 }
-function Pipe(arg0: { name: string; }): (target: typeof HomeComponent) => void | typeof HomeComponent {
-  throw new Error('Function not implemented.');
-}
+// function Pipe(arg0: { name: string; }): (target: typeof HomeComponent) => void | typeof HomeComponent {
+//   throw new Error('Function not implemented.');
+// }
 
