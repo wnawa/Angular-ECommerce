@@ -1,7 +1,12 @@
 # AngularECommerce
 
-E-Commerce Front-End is developed using Angular-17,Bootstrap3.I have used Slick Corasoul for this Project and customized it's css.Jquery is also used for some designs animations in the menu.A Fake jason server is used to fetch data from db file.
-The Website enables for all e- commerce :
+E-Commerce Front-End website is developed using Angular-17,Bootstrap3.
+I have used Slick Corasoul for this Project and customized it's css.
+Jquery is also used for some designs animations in the menu.
+A Fake jason server is used to fetch data from db file.
+The Website is fully Mobile Responsive.
+
+The Website enables the user to perform all e- commerce operations:
 -Home Page Showing Top sellers .reviews as well as Latetes Products.
 -Shop Page Showing All Products with option to Show Details or Add Product to cart .
 -Showing Detailed View of a Product Page with the postion to view related Products .
