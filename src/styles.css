@@ -184,6 +184,12 @@ body {
   text-align: center;
 }
 
+.block-slider:hover .mainslick-prev{
+	left: 10px;
+}
+.block-slider:hover .mainslick-next{
+	right: 10px;
+}
 .mainslick-next:hover,
 .mainslick-prev:hover {
   background: #5a88ca;
