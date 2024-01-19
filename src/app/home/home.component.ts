@@ -15,33 +15,32 @@ import { CommonModule } from '@angular/common';
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
-  
 })
 export class HomeComponent {
-   // Main courasoul configuration
+  // Main courasoul configuration
   slides = [
     {
       img: '../../assets/img/h4-slide.png',
       title: 'iphone ',
-      greentext:'6 Plus',
+      greentext: '6 Plus',
       subtitle: 'Dual SIM',
     },
     {
       img: '../../assets/img/h4-slide2.png',
-      title:'buy one, get one ',
-      greentext:'50% off',
+      title: 'buy one, get one ',
+      greentext: '50% off',
       subtitle: 'school supplies & backpacks.*',
     },
     {
       img: '../../assets/img/h4-slide3.png',
       title: 'Apple ',
-      greentext:'Store Ipod',
+      greentext: 'Store Ipod',
       subtitle: 'Select Item',
     },
     {
       img: '../../assets/img/h4-slide4.png',
       title: 'Apple ',
-      greentext:'Store Ipod',
+      greentext: 'Store Ipod',
       subtitle: '&Phone',
     },
   ];
@@ -53,11 +52,13 @@ export class HomeComponent {
     autoplaySpeed: 1500,
     isFinite: true,
     arrows: true,
-      nextArrow: '<i class="fa fa-chevron-right mainslick-next" style="color: #5a88ca;"></i>',
-  prevArrow: '<i class="fa fa-chevron-left mainslick-prev" style="color: #5a88ca;"></i>'
+    nextArrow:
+      '<i class="fa fa-chevron-right mainslick-next" style="color: #5a88ca;"></i>',
+    prevArrow:
+      '<i class="fa fa-chevron-left mainslick-prev" style="color: #5a88ca;"></i>',
   };
 
-   // Brands corasoul configuration
+  // Brands corasoul configuration
   slideConfigLogos = {
     accessibility: true,
     dots: false,
@@ -139,7 +140,4 @@ export class HomeComponent {
     prevArrow: '<button type="button" class="  logoslick-prev  ">prev</button>',
   };
 }
-// function Pipe(arg0: { name: string; }): (target: typeof HomeComponent) => void | typeof HomeComponent {
-//   throw new Error('Function not implemented.');
-// }
 
