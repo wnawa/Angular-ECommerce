@@ -10,7 +10,7 @@ The Website enables the user to perform all e- commerce operations:
   <li>Home Page Showing Top sellers .reviews as well as Latetes Products.</li>
   <li>Home Page Showing Top sellers .reviews as well as Latetes Products.</li>
     <li>Shop Page Showing All Products with option to Show Details or Add Product to cart .</li>
-     <li>Showing Detailed View of a Product Page with the postion to view related Products .</li>
+     <li>Showing Detailed View of a Product Page with the option to view related Products .</li>
     <li>Checkout Details Page.</li>
           
 </ol>
