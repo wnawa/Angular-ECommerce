@@ -1,4 +1,4 @@
-# AngularECommerce
+# Angular ECommerce Front End
 
 E-Commerce Front-End website is developed using Angular-17,Bootstrap3.
 I have used Slick Corasoul for this Project and customized it's css.
