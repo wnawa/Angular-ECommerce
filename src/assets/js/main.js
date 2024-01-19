@@ -21,3 +21,26 @@ jQuery(document).ready(function ($) {
 ga('create', 'UA-10146041-21', 'auto');
 ga('send', 'pageview');
 
+// Slick corasoul  animation
+
+// function initCarousel() {
+
+//     $('.my-carousel').slick({
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         autoplay: false,
+//         adaptiveHeight: false,
+//        fade: true,
+//        speed: 0, // removes Slick's standard animation
+//     }).on('beforeChange', function(event, slick, currentSlideIndex, nextSlideIndex) {
+//         if(nextSlideIndex > currentSlideIndex) {
+//             // Animation to go to next slide
+//            $('.my-carousel .slick-slide[data-slick-index=' + currentSlideIndex + ']').addClass('fadeOutLeft').removeClass('fadeInRight');
+//            $('.my-carousel .slick-slide[data-slick-index=' + nextSlideIndex + ']').addClass('fadeInRight').removeClass('fadeOutLeft fadeOutRight');
+//        } else {
+//             // Animation to go to previous slide
+//            $('.my-carousel .slick-slide[data-slick-index=' + currentSlideIndex + ']').addClass('fadeOutRight').removeClass('fadeInRight');
+//            $('.my-carousel .slick-slide[data-slick-index=' + nextSlideIndex + ']').addClass('fadeInLeft').removeClass('fadeOutLeft fadeOutRight');
+//        }
+//    });
+// }

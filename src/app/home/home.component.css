@@ -25,15 +25,6 @@
   border: none;
   width: 100%;
 }
-.block-slider .slick-dots ul li,
-.block-slider ul li {
-  list-style: none;
-}
-.block-slider .slick-dots ul li,
-.block-slider .bx-pager {
-  display: none;
-}
-
 
 .block-slider img {
   width: 100%;
@@ -65,29 +56,7 @@
 [4. Slidershow]
 ------------------*/
 
-.block-slider .bx-pager {
-  display: block;
-  text-align: center;
-}
-.block-slider .bx-pager-item {
-  width: 15px;
-  height: 15px;
-  background: #fff;
-  font-size: 0;
-  display: inline-block;
-  border-radius: 50%;
-  margin: 0 3px;
-}
-.block-slider .bx-pager-item a {
-  width: 100%;
-  height: 100%;
-  background: #999;
-  display: block;
-  border-radius: 50%;
-}
-.block-slider .bx-pager-item a.active {
-  background: #1bd172;
- }
+
  .block-slider 
 .caption-group {
   position: absolute;
