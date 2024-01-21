@@ -94,7 +94,7 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   width: 100%;
-  z-index: 999;
+  z-index: 2000;
 }
 
 .logo h1 {
@@ -445,7 +445,7 @@ body {
   border-radius: 5px;
   color: #fff;
   display: block;
-  font-size: 14px;
+  font-size: 12px;
   left: 10%;
   margin: 0;
   padding: 10px;
@@ -472,10 +472,10 @@ body {
   margin-right: 5px;
 }
 .product-hover a.add-to-cart-link {
-  top: -25%;
+  top: -30%;
 }
 .product-hover a.view-details-link {
-  bottom: -25%;
+  bottom: -30%;
 }
 .single-product h2 {
   font-size: 18px;
@@ -624,6 +624,7 @@ body {
   background: #f4f4f4;
 }
 .footer-top-area .zigzag-bottom {
+  /* height:1%; */
   background: #f4f4f4;
 }
 .footer-top-area {
