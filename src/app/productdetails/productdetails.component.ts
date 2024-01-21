@@ -38,8 +38,13 @@ export class ProductdetailsComponent {
       .then((returnedproduct) => {
         this.product = returnedproduct;
       });
+<<<<<<< HEAD
    
       window.scrollTo(0, 0);
+||||||| dd89127
+=======
+      window.scrollTo(0, 0);
+>>>>>>> 1d52215ed842a75b8141bc11396526f47d7b8240
   }
   //calling service to display product when show details button clicked in related products corasoul
   onShowDetailsClicked(productselected: number) {
