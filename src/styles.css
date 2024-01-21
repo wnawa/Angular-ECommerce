@@ -1186,7 +1186,9 @@ a.about_paypal {
   padding: 10px;
   width: 100%;
 }
-
+.shop_table cart td{align-items: center;
+  vertical-align:middle ;
+}
 table.shop_table td.product-remove a {
   display: inline-block;
   padding: 0 5px 2px;
