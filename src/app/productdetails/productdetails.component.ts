@@ -38,6 +38,7 @@ export class ProductdetailsComponent {
       .then((returnedproduct) => {
         this.product = returnedproduct;
       });
+      window.scrollTo(0, 0);
   }
   //calling service to display product when show details button clicked in related products corasoul
   onShowDetailsClicked(productselected: number) {
