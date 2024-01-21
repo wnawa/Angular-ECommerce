@@ -4,6 +4,7 @@ E-Commerce Front-End website is developed using below Technologies:
 
 <ol>
 <li>Angular-17</li>
+<li>Typescript</li>
 <li>Bootstrap-3</li>
 <li>Jquery</li>
 <li>Slick Carousel</li>
@@ -11,7 +12,7 @@ E-Commerce Front-End website is developed using below Technologies:
 <li>Css</li>
 <li>Json Server</li>
 <li>jasmine</li>
-</ol> .
+</ol> 
 I have used Slick Carousel for this Project and customized it's css.
 Jquery is also used for some designs animations in the menu.
 A Fake jason server is used to fetch data from db file.
@@ -25,6 +26,7 @@ The Website enables the user to perform all e- commerce operations:
 </ol>
 
 At the moment the User's Profile Page is under construction.
+A Screenshoot Folder is included to view Some Features.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.3.
 
