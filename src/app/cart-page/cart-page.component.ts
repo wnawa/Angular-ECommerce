@@ -17,6 +17,7 @@ export class CartPageComponent {
   
   constructor(private cartservice: CartService) {
     this.setCart();
+    window.scrollTo(0, 0);
   }
 
   setCart() {

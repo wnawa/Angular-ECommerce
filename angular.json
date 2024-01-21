@@ -28,8 +28,8 @@
               "node_modules/slick-carousel/slick/slick.scss",
               "node_modules/slick-carousel/slick/slick-theme.scss",
               "node_modules/font-awesome/css/font-awesome.css",
-              "src/assets/css/responsive.css",
-              "src/styles.css",
+           
+              "src/styles.css",   "src/assets/css/responsive.css",
               "node_modules/@fontsource/roboto-condensed/index.css",
               "node_modules/@fontsource/titillium-web/index.css",
               "node_modules/@fontsource/raleway/100.css"
@@ -38,7 +38,8 @@
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "node_modules/slick-carousel/slick/slick.min.js",
-               "node_modules/jquery.easing/jquery.easing.min.js",
+              "node_modules/jquery.easing/jquery.easing.min.js",
+        
               "node_modules/jquery-sticky/jquery.sticky.js",
               "src/assets/js/jquery.sticky.js",
               "src/assets/js/jquery.easing.1.3.min.js",

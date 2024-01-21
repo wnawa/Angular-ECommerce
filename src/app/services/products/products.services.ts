@@ -13,4 +13,13 @@ export class ProductServices {
     const data = await fetch(`${this.productsURL}/${Id}`);
     return (await data.json()) ?? []; //return array if null data
   }
+
+  async getLatestProduct(): Promise<Product | undefined> {
+    const data = await fetch(this.productsURL);
+    return (await data.json()) ?? []; //return array if null data
+  }
+  async getRelatedProduct(title:string): Promise<Product | undefined> {
+    const data = await fetch(this.productsURL);
+    return (await data.json()) ?? []; //return array if null data
+  }
 }

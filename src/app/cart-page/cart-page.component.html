@@ -87,7 +87,14 @@
       <div class="col-md-8">
         <div class="product-content-right">
           <div class="woocommerce">
+            @if(cart.items.length==0) {
+              <div class="text-center">
+                Your Cart Is Empty!Add Some
+                <a routerLink="/products"> Products</a>
+              </div>
+              }@else{
             <form method="post" action="#">
+           
               <table cellspacing="0" class="shop_table cart">
                 <thead>
                   <tr>
@@ -107,8 +114,7 @@
                         title="Remove this item"
                         class="remove"
                         (click)="deleteCartItemById(cartItem.id)"
-                        >×</a
-                      >
+                        >×</a>
                     </td>
 
                     <td class="product-thumbnail">
@@ -218,6 +224,7 @@
                   </tr>
                 </tbody>
               </table>
+           
             </form>
 
             <div class="cart-collaterals">
@@ -245,7 +252,7 @@
                       data-product_sku=""
                       data-product_id="22"
                       rel="nofollow"
-                      routerLink="/product"
+                      routerLink="/product/1"
                       >Select options</a
                     >
                   </li>
@@ -271,7 +278,7 @@
                       data-product_sku=""
                       data-product_id="22"
                       rel="nofollow"
-                      routerLink="/product"
+                      routerLink="/product/1"
                       >Select options</a
                     >
                   </li>
@@ -624,7 +631,7 @@
                   </p>
                 </section>
               </form>
-            </div>
+            </div>   }
           </div>
         </div>
       </div>
